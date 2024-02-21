@@ -409,11 +409,11 @@ h1.number-title{
   color: rgb(3, 89, 165); 
 }
 
-h1.number-title::before{
+h1.number-title::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;  
   counter-increment: sectionCounter;
-  content: counter(semanaCounter)"."counter(sectionCounter)".";
+  content: " " counter(semanaCounter)"."counter(sectionCounter)" ";
 }
 
 h2.number-title{
@@ -425,11 +425,11 @@ h2.number-title{
   color: rgb(3, 89, 165); 
 }
 
-h2.number-title::before{
+h2.number-title::after{
   /* font-family: "Roboto"; */
   font-family: 'Hina Mincho', serif;
   counter-increment: subsectionCounter;
-  content: counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)". ";
+  content: " " counter(semanaCounter)"."counter(sectionCounter)"."counter(subsectionCounter)" ";
 }
 
 /* Para praticas  */
