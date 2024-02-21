@@ -92,15 +92,40 @@
       <title>Semana 1</title>
       </head>  
 
-      <body class="fondo-body" ><h1 class="page-title"> $\sigma$-Álgebras </h1>   
-      
-  
+  <body class="fondo-body" ><h1 class="page-title"> $\sigma$-Álgebras </h1>   
+
+    <h1 class="page-subtitle"> $\lambda$ - sistemas </h1>
+
+    <div class="nota-box"><h1 class="number-title"> Definición</h1>
+      <p>Sea $\Omega$ un conjunto no vacio. Una familia no vacia de subconjuntos $\mathcal{F}$ de $\Omega$ (i.e. $\mathcal{F} \subseteq \mathcal{P}(\Omega)$) es un 
+        $\lambda$-sistema sobre $\Omega$ si cumple las siguientes propiedades:
+      </p>
+      <p>
+        <ol>
+          <li>$\Omega \in \mathcal{F}$</li><br>
+          <li>Si $A,B \in \mathcal{F}$ con $A \subseteq B$, entonces $B \setminus A \in \mathcal{F}$.</li><br>
+          <li>Si $(A_{n})_{n=1}^{\infty}$ es una colección númerable de  subconjuntos de $\mathcal{F}$ tales que $A_{i} \subseteq A_{i+1}$ para todo $i \in \mathbb{N}$, entonces $\displaystyle{\bigcup_{n=1}^{\infty} A_{n} \in \mathcal{F}}$.</li>
+        </ol>
+      </p>
+      <p>Algunas veces un $\lambda$-sistema es también llamado <b>sistema de Dynkin</b></p>
+    </div>
+
+    <h1 class="page-subtitle"> $\pi$ - sistemas </h1>
+
+    <div class="nota-box"><h1 class="number-title"> Definición</h1>
+      <p>Sea $\Omega$ un conjunto no vacio. Una familia no vacia de subconjuntos $\mathcal{F}$ de $\Omega$ ( i.e. $\mathcal{F} \subseteq \mathcal{P}(\Omega)$ ) es un $\pi$-sistema sobre $\Omega$ si es cerrada bajo intersecciones finitas i.e. si para todo $n \in \mathbb{N}$,  $A_{1}, A_{2}, \ldots, A_{n} \in \mathcal{F}$, entonces $\displaystyle{\bigcap_{i=1}^{n} A_{i} \in \mathcal{F}}$.
+    </div>
+
   <h1 class="page-subtitle"> Álgebras</h1>
 
-  <div class="nota-box"><h1 class="number-title"> Definición</h2>
-    <p>
-    </strong>Sea $\mathscr{F}$ una colección de subconjuntos de un conjunto $\Omega$ (i.e. $\mathscr{F} \subseteq \mathscr{P}(\Omega)$). Diremos que $\mathscr{F}$ es un <strong>álgebra sobre</strong> $\Omega$ si cumple las siguientes propiedades:</p>
-    <ol><li>$\Omega \in \mathscr{F}$.</li><li>Si $A \in \mathscr{F}$, entonces $A^{\mathsf{c}} \in \mathscr{F}$.</li><li>Si $A_{1}, A_{2}, \ldots, A_{n} \in \mathscr{F}$, entonces $\bigcup_{i=1}^{n} A_{i} \in \mathscr{F}$.</li></ol>
+  <div class="nota-box"><h1 class="number-title"> Definición</h1>
+    <p>Sea $\Omega$ un conjunto no vacio. Una colección de subconjuntos $\mathcal{F}$ de $\Omega$ ( i.e. $\mathcal{F} \subseteq \mathscr{P}(\Omega)$ ) es es un álgebra sobre $\Omega$ si cumple las siguientes propiedades:
+    </p>
+    <ol>
+      <li>$\Omega \in \mathcal{F}$.</li><br>
+      <li>Si $A \in \mathcal{F}$, entonces $\Omega \setminus A \in \mathcal{F}$.</li><br>
+      <li>Si $A_{1}, A_{2}, \ldots, A_{n} \in \mathcal{F}$, entonces $\displaystyle{\bigcup_{i=1}^{n} A_{i} \in \mathcal{F}}$.</li>
+    </ol>
     <!-- <p>$A^{\mathsf{c}}$ es el complemento de $A$ respecto a $\Omega$, pues $A \subseteq \Omega$.</p> -->
   </div>
   
@@ -110,18 +135,29 @@
 
   
 
-  <div class="nota-box"><h1 class="number-title"> Definición </h2>
-    <p>
-    </strong>Sea $\mathscr{F}$ una colección de subconjuntos de un conjunto $\Omega$ (es decir, $\mathscr{F} \subseteq \mathscr{P}(\Omega)$). Diremos que $\mathscr{F}$ es un <strong>σ</strong>&#8211;<strong>álgebra sobre</strong> $\Omega$ (se lee «sigma-álgebra sobre omega», su plural es «sigma-álgebras») si cumple las siguientes propiedades:</p>
-    <ol><li>$\Omega \in \mathscr{F}$.</li><li>Si $A \in \mathscr{F}$, entonces $A^{\mathsf{c}} \in \mathscr{F}$.</li><li>Si $A_{1}, A_{2}, \ldots \in \mathscr{F}$, entonces $\bigcup_{i=1}^{\infty} A_{i} \in \mathscr{F}$.</li></ol>
+  <div class="nota-box"><h1 class="number-title"> Definición </h1>
+    <p>Sea $\Omega$ un conjunto no vacio. Una familia no vacia de subconjuntos $\mathcal{F}$ de $\Omega$ (i.e. $\mathcal{F} \subseteq \mathcal{P}(\Omega)$) es un $\sigma$-álgebra sobre $\Omega$ si cumple las siguientes propiedades:
+    </p>
+    <ol>
+      <li>$\Omega \in \mathcal{F}$.</li><br>
+      <li>Si $A \in \mathcal{F}$, entonces $\Omega \setminus A \in \mathcal{F}$.</li><br>
+      <li>Si $A_{1}, A_{2}, \ldots \in \mathcal{F}$, entonces $\displaystyle{\bigcup_{i=1}^{\infty} A_{i} \in \mathcal{F}}$.</li>
+    </ol>
     </p>
   </div>
 
+  
+  <!-- <div class="nota-box"><h1 class="number-title"> Proposición </h1>
+    <p>Una $\sigma$-álgebra es un $\lambda$-sistema y un $\pi$-sistema.</p>
+  </div> -->
+
+  <div class="nota-box"><h1 class="number-title"> Observación </h1>
+    <p>Sea $\Omega$ un conjunto no vacio y $\mathcal{F}$ una familia no vacia de subconjuntos de $\Omega$. $\mathcal{F}$ es una $\sigma$-álgebra si y sólo si es ambos un $\lambda$-sistema y un $\pi$-sistema.
+    </p>
+  </div>
 
   <h1 class="page-subtitle">$\sigma-\text{Álgebras generadas}$</h1>
 
-
-  
   <div class="nota-box"><h1 class="number-title-definicion"> Introducción</h1>   
 
     <p>Considera la siguiente situación. Supón que tenemos una familia de conjuntos $\mathscr{C} \subseteq \mathscr{P}(\Omega)$.
@@ -132,23 +168,44 @@
   </div>
 
   
-  <div class="nota-box"><h1 class="number-title"> Teorema </h2>
+  <div class="nota-box"><h1 class="number-title"> Teorema </h1>
     <p> Dado $\Omega$ un conjunto y $\mathscr{C}$ una familia de subconjuntos de
       $\Omega$ ($\mathscr{C} \subseteq \mathscr{P}(\Omega)$), existe un único σ-álgebra sobre $\Omega$
       de tamaño mínimo $\mathscr{L}$ tal que $\mathscr{C} \subseteq \mathscr{L}$.
     </p>
   </div>
 
-  <div class="nota-box"><h1 class="number-title"> Observaciones</h2>  
+  <div class="nota-box"><h1 class="number-title"> Observaciones</h1>  
     <ol>
       <li>Podemos cronstruir σ-álgebras sobre cualquier conjunto.</li>
       <li>Existe una cantidad abundante de σ-álgebras.</li>
     </ol>
   </div>
 
+  
+  <h1 class="page-subtitle">Teorema de las clases monótonas </h1>
+  
+  <div class="nota-box"><h1 class="number-title"> Definición</h1>
+    <p>Sea $\Omega$ un conjunto no vacio y $\mathcal{M}$ una familia no vacia de subconjuntos de $\Omega$. Se dice que $\mathcal{F}$ es una <b>clase monótona</b> de $\Omega$si esta es cerrada bajo uniones e intersecciones de sucesiones numerables monótonas. Esto es, 
+      <ol>
+        <li>Si $A_{1}, A_{2}, \ldots \in \mathcal{M}$ y $A_{i} \subseteq A_{i+1}$ para todo $i \in \mathbb{N}$, entonces $\displaystyle{\bigcup_{n=1}^{\infty} A_{n} \in \mathcal{M}}$
+        </li><br>
+        <li>Si $A_{1}, A_{2}, \ldots \in \mathcal{M}$ y $A_{i+1} \subseteq A_{i}$ para todo $i \in \mathbb{N}$, entonces $\displaystyle{\bigcap_{n=1}^{\infty} A_{n} \in \mathcal{M}}$</li>
+      </ol>
+
+    </p>
+  </div>
+
+  
+  <div class="nota-box"><h1 class="number-title"> Teorema</h1>  
+    <p>Sea $\Omega$ un conjunto no vacio. Si $\mathcal{F}_{0}$ es un álgebra sobre $\Omega$ y $\mathcal{F}$ es una clase monotona de $\Omega$. Si $\mathcal{F}_{0} \subseteq \mathcal{M}$, entonces $\sigma(\mathcal{F}) \subseteq \mathcal{M}$
+    </p>
+    <!-- <p><b>Dem:</b> Ciprian pag.25</p> -->
+  </div>
+
   <h1 class="page-subtitle"> $\sigma-\text{Álgebra de Borel}$</h1>
 
-  <div class="nota-box"><h1 class="number-title-definicion"> Introducción </h2>  
+  <div class="nota-box"><h1 class="number-title-definicion"> Introducción </h1>  
     <p>El ejemplo anterior exhibe una manera de construir el σ-álgebra generado por una familia finita de conjuntos. 
       Sin embargo, esto se torna más abstracto cuando la familia no es finita. En particular, cuando 
       $\Omega = \mathbb{R}$, sería interesante pensar en el σ-álgebra generado por la familia de intervalos 
@@ -186,7 +243,7 @@
 
   
 
-  <div class="nota-box"><h1 class="number-title"> Observación</h2>  
+  <div class="nota-box"><h1 class="number-title"> Observación</h1>  
     <p><p>Más aún, $\mathscr{B}(\mathbb{R})$ resulta ser el σ-álgebra generado por otras familias de intervalos muy parecidas.
       Las siguientes familias son algunas de ellas:</p>
     <p>\begin{align*}<br>\mathscr{C}_{3} &amp;= \left\lbrace [a, b) \mid a, b \in \mathbb{R} \land a &lt; b\right\rbrace, \\<br>\mathscr{C}_{4} &amp;= \left\lbrace (a, b) \mid a, b \in \mathbb{R} \land a &lt; b \right\rbrace, \\<br>\mathscr{C}_{5} &amp;= \left\lbrace [a, b] \mid a, b \in \mathbb{R} \land a &lt; b \right\rbrace, \\<br>\mathscr{C}_{6} &amp;= \left\lbrace (a, \infty) \mid a \in \mathbb{R} \right\rbrace, \\<br>\mathscr{C}_{7} &amp;= \left\lbrace [a, \infty) \mid a \in \mathbb{R} \right\rbrace, \\<br>\mathscr{C}_{8} &amp;= \left\lbrace (-\infty, b) \mid b \in \mathbb{R} \right\rbrace.<br>\end{align*}</p>
